@@ -95,7 +95,9 @@ body {
       border-left: 754px solid transparent; }
   .extra-info.-second {
     background-color: #fff;
-    padding: 90px 200px 120px 80px; }
+    padding: 90px 200px 120px 75px;
+    height: 570px;
+    box-sizing: border-box; }
     .extra-info.-second .content {
       color: #027534; }
     .extra-info.-second::after {
@@ -135,8 +137,8 @@ body {
   float: left;
   width: 754px;
   margin-left: 0;
-  background: -webkit-linear-gradient(bottom, white 0%, white 50%, white 80%, rgba(255, 255, 255, 0.6) 100%);
-  background: linear-gradient(to top, white 0%, white 50%, white 80%, rgba(255, 255, 255, 0.6) 100%); }
+  background: -webkit-linear-gradient(bottom, white 0%, white 50%, white 80%, rgba(255, 255, 255, 0.8) 90%, rgba(255, 255, 255, 0.6) 100%);
+  background: linear-gradient(to top, white 0%, white 50%, white 80%, rgba(255, 255, 255, 0.8) 90%, rgba(255, 255, 255, 0.6) 100%); }
 
 .main {
   width: 100%; }
@@ -249,13 +251,14 @@ body {
         padding: 0;
         list-style: none;
         position: absolute;
-        width: 200%;
-        height: 100%;
+        width: 100%;
+        height: 200%;
         top: 0; }
       .main .lesson.-two .image-slider .image-item {
+        text-align: center;
         padding: 0;
         margin: 0;
-        width: 50%;
+        width: 100%;
         height: 100%;
         overflow: hidden;
         position: absolute;
@@ -263,8 +266,8 @@ body {
         bottom: 0;
         border: none; }
         .main .lesson.-two .image-slider .image-item img {
-          max-width: 100%;
-          min-height: 100%; }
+          width: 100%;
+          max-height: 100%; }
     .main .lesson.-two .text-slider {
       min-height: 300px;
       padding: 30px 40px;
@@ -289,8 +292,8 @@ body {
         content: "";
         position: absolute;
         background-image: url(../img/number3.png);
-        width: 240px;
-        height: 250px;
+        width: 250px;
+        height: 260px;
         background-size: contain;
         bottom: 60px;
         left: 50px;
@@ -309,14 +312,13 @@ body {
         padding: 0;
         list-style: none;
         position: absolute;
-        width: 100%;
-        height: 200%;
+        width: 200%;
+        height: 100%;
         top: 0; }
       .main .lesson.-three .image-item {
-        text-align: center;
         padding: 0;
         margin: 0;
-        width: 100%;
+        width: 50%;
         height: 100%;
         overflow: hidden;
         position: absolute;
