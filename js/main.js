@@ -1,4 +1,5 @@
 $(function() {
+
   var slider1 = $('#one .image-list'),
   slider2 = $('#two .image-list'),
   slider3 = $('#three .image-list'),

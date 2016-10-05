@@ -6,29 +6,8 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
   font: inherit;
   vertical-align: baseline; }
 
-article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
-  display: block; }
-
 body {
   line-height: 1; }
-
-ol, ul {
-  list-style: none; }
-
-blockquote, q {
-  quotes: none; }
-
-blockquote:before, blockquote:after {
-  content: "";
-  content: none; }
-
-q:before, q:after {
-  content: "";
-  content: none; }
-
-table {
-  border-collapse: collapse;
-  border-spacing: 0; }
 
 body {
   background: url(../img/backgr.png) repeat center top;
@@ -96,7 +75,7 @@ body {
   .extra-info.-second {
     background-color: #fff;
     padding: 90px 200px 120px 75px;
-    height: 570px;
+    height: 560px;
     box-sizing: border-box; }
     .extra-info.-second .content {
       color: #027534; }
@@ -117,10 +96,9 @@ body {
     display: none; }
     .text-slider .text-item .lesson-content {
       font-size: 13px;
-      line-height: 17px;
-      font-family: "FuturaMedium", sans-serif; }
+      line-height: 17px; }
     .text-slider .text-item .beauty-content {
-      font-size: 18px;
+      font-size: 17px;
       font-family: "BodoniCyr";
       line-height: 20px; }
 
@@ -152,7 +130,7 @@ body {
     white-space: nowrap;
     line-height: 45px; }
   .main-intro-text {
-    font-size: 14px;
+    font-size: 15px;
     font-family: "FuturaBook", sans-serif;
     color: #000;
     text-transform: uppercase;
@@ -182,18 +160,16 @@ body {
         background-color: #027534;
         margin: 30px auto; }
       .main .lesson.-one .left {
-        width: 55%;
+        width: 390px;
         float: left; }
       .main .lesson.-one .right {
         width: 290px;
-        float: right;
-        margin-left: 15px; }
+        float: right; }
       .main .lesson.-one .image-slider {
         max-width: 333px;
         height: 590px;
         position: relative;
         overflow: hidden;
-        background-color: rgba(2, 117, 52, 0.6);
         -webkit-clip-path: polygon(100% 0, 100% 88%, 0 100%, 0 0);
         clip-path: polygon(100% 0, 100% 88%, 0 100%, 0 0); }
         .main .lesson.-one .image-slider .image-list {
@@ -242,7 +218,9 @@ body {
       height: 542px;
       overflow: hidden;
       position: relative;
-      background-color: rgba(187, 55, 84, 0.6); }
+      background-color: rgba(187, 55, 84, 0.6);
+      -webkit-clip-path: polygon(100% 0, 100% 73%, 0 100%, 0 0);
+      clip-path: polygon(100% 0, 100% 73%, 0 100%, 0 0); }
       .main .lesson.-two .image-slider::after {
         content: "";
         position: absolute;
@@ -292,13 +270,13 @@ body {
           position: absolute; }
           .main .lesson.-two .text-slider .text-item .lesson-content:last-child, .main .lesson.-two .text-slider .text-item .beauty-content:last-child {
             width: 240px;
-            top: -35px;
+            top: -15px;
             right: 15px; }
           .main .lesson.-two .text-slider .text-item .lesson-content:first-child, .main .lesson.-two .text-slider .text-item .beauty-content:first-child {
             width: 210px;
             top: 5px; }
     .main .lesson.-three {
-      height: 775px; }
+      height: 790px; }
       .main .lesson.-three::after {
         content: "";
         position: absolute;
@@ -318,7 +296,6 @@ body {
         position: relative;
         overflow: hidden;
         margin-left: 10px;
-        background-color: #67ac85;
         -webkit-clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
         clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%); }
       .main .lesson.-three .image-list {
@@ -330,9 +307,9 @@ body {
         height: 100%;
         top: 0; }
         .main .lesson.-three .image-list .-one {
-          background-image: url(../img/3.png);
-          max-width: 100%;
-          max-height: 100%; }
+          background-image: url(../img/3.png); }
+        .main .lesson.-three .image-list .-two {
+          background-image: url(../img/3b.png); }
       .main .lesson.-three .image-item {
         padding: 0;
         margin: 0;
@@ -342,28 +319,32 @@ body {
         position: absolute;
         top: 0;
         bottom: 0;
-        border: none; }
+        border: none;
+        max-width: 100%;
+        max-height: 100%; }
       .main .lesson.-three .text-slider {
         position: relative;
         top: -630px;
-        height: 780px; }
+        height: 790px; }
         .main .lesson.-three .text-slider .text-backgr {
           position: absolute;
           bottom: 0;
           background-color: rgba(187, 55, 84, 0.4);
           width: 100%;
-          height: 465px; }
+          height: 475px; }
         .main .lesson.-three .text-slider .lesson-content, .main .lesson.-three .text-slider .beauty-content {
-          color: #fff;
-          text-align: right;
-          -webkit-clip-path: polygon(100% 0, 100% 100%, 0 100%, 60% 0);
-          clip-path: polygon(100% 0, 100% 100%, 0 100%, 60% 0); }
+          color: #fff; }
+          .main .lesson.-three .text-slider .lesson-content #shape, .main .lesson.-three .text-slider .beauty-content #shape {
+            width: 270px;
+            height: 270px;
+            float: left;
+            shape-outside: polygon(100% 0, 0% 100%, 50% 46%); }
         .main .lesson.-three .text-slider .text-item {
           position: relative;
           width: 445px;
           height: 400px;
           float: right;
-          padding: 120px 20px 20px;
+          padding: 110px 20px 20px;
           max-height: 320px; }
           .main .lesson.-three .text-slider .text-item:last-child::before {
             content: "";
@@ -375,6 +356,17 @@ body {
             top: -220px;
             left: -40px;
             background-repeat: no-repeat; }
+    .main .lesson.-four::after {
+      content: "";
+      position: absolute;
+      background-image: url(../img/number4.png);
+      width: 215px;
+      height: 290px;
+      bottom: 0;
+      left: 195px;
+      background-repeat: no-repeat;
+      z-index: 0;
+      background-size: cover; }
     .main .lesson.-four .slider-control {
       top: -50px;
       right: 273px; }
@@ -469,7 +461,7 @@ body {
         bottom: -25px; }
     .cosmetics .cosmetics-item .item-content {
       font-family: "FuturaBook", sans-serif;
-      font-size: 13px;
+      font-size: 14px;
       line-height: 17px;
       margin-bottom: 20px; }
     .cosmetics .cosmetics-item .link {
@@ -517,7 +509,7 @@ body {
     .cosmetics .cosmetics-item.-third > div {
       width: 485px;
       margin: 0 auto;
-      padding: 15px 33px;
+      padding: 30px 33px 15px;
       box-sizing: border-box; }
     .cosmetics .cosmetics-item.-third::before {
       content: "";
@@ -537,7 +529,7 @@ body {
       height: 310px;
       background-repeat: no-repeat;
       background-size: contain;
-      top: 0;
+      top: 25px;
       left: 18px; }
 
 .footer {
